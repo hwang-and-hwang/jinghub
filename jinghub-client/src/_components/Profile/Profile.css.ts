@@ -5,7 +5,8 @@ export const root = style({
     gridTemplateColumns: '2fr 3fr',
     border: '2px solid #30363d',
     padding: '1rem',
-    borderRadius: '6px'
+    borderRadius: '6px',
+    marginBottom: '2rem',
 });
 
 export const profileImage = style({

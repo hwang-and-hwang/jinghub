@@ -1,5 +1,5 @@
 export type JingShower = {
-    date: Date;
+    date: string;
     didCleaned: boolean;
     hair?: boolean;
     face?: boolean;
