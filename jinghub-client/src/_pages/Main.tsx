@@ -4,6 +4,7 @@ import Profile from '../_components/Profile/Profile';
 import Readme from '../_components/Readme/Readme';
 
 import * as css from './Main.css';
+import GrassField from '../_components/GrassField/GrassField';
 
 type MainProps = {
   
@@ -11,14 +12,17 @@ type MainProps = {
 
 const Main: React.FC<MainProps> = ({}) => {
   return (
-    <Layout>
+    <Layout direction="column">
+      <section style={{ width: '100%'}}>
+        <div>
+          <Readme />
+        </div>
+      </section>
       <section>
         <Profile />
       </section>
       <section>
-        <div className={css.main}>
-          <Readme />
-        </div>
+        <GrassField />
       </section>
     </Layout>
   );

@@ -3,7 +3,10 @@ import { recipe } from '@vanilla-extract/recipes';
 export const root = recipe({
     base: {
         display: 'flex',
-        alignItems: 'flex-start'
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: '0 5vw',
+        width: '90%'
     } ,
 
     variants: {

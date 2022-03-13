@@ -1,17 +1,17 @@
 import { style } from '@vanilla-extract/css';
 
 export const root = style({
-    width: '20vw',
-    display: 'flex',
-    flexDirection: 'column',
-    position: 'sticky',
+    display: 'grid',
+    gridTemplateColumns: '2fr 3fr',
+    border: '2px solid #30363d',
+    padding: '1rem',
+    borderRadius: '6px'
 });
 
 export const profileImage = style({
     borderRadius: '999px',
     border: '2px solid #30363d',
-    width: '10vw',
-    height: '10vw',
+    width: '50%',
 });
 
 export const list = style({
@@ -23,5 +23,6 @@ export const listItem = style({
     display: 'flex',
     gap: '1rem',
     color: 'white',
-    textDecoration: 'none'
-})
+    textDecoration: 'none',
+    marginBottom: '1rem',
+});

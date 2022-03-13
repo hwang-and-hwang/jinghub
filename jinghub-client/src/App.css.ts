@@ -7,4 +7,8 @@ globalStyle('body', {
 
 globalStyle('hr', {
     borderColor: 'rgba(255, 255, 255, 0.1)'
+});
+
+globalStyle('h3', {
+    margin: '0.5rem 0',
 })

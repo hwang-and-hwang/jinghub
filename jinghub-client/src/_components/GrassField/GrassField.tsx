@@ -1,4 +1,5 @@
 import React from 'react';
+import * as css from './GrassField.css';
 
 type GrassFieldProps = {
   
@@ -6,8 +7,8 @@ type GrassFieldProps = {
 
 const GrassField: React.FC<GrassFieldProps> = ({}) => {
   return (
-    <div>
-
+    <div className={css.root}>
+      <h3></h3>
     </div>
   );
 };
