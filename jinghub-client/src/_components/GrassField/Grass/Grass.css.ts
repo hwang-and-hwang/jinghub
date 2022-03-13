@@ -7,6 +7,7 @@ export const root = recipe({
         height: '30px',
         borderRadius: '2px',
         justifySelf: 'center',
+        position: 'relative',
     },
 
     variants: {

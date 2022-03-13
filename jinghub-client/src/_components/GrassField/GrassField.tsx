@@ -17,18 +17,18 @@ const GrassField: React.FC<GrassFieldProps> = ({ field } : GrassFieldProps) => {
 
   const days = useMemo(() => {
     return ['Sum', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].map(
-      day => <div style={{ justifySelf: 'center'}}>{day}</div>
+      day => <div style={{ justifySelf: 'center'}} key={day}>{day}</div>
     );
   }, []);
 
   return (
-    <div className={css.root}>
-      <h3>정빈이는 최근 30일간 {totalShower}회 씻었습니다.</h3>
-      <div className={css.grid}>
-        {days}
-        {field.map(item => <Grass item={item}/>)}
+      <div className={css.root}>
+        <h3>정빈이는 최근 30일간 {totalShower}회 씻었습니다.</h3>
+        <div className={css.grid}>
+          {days}
+          {field.map(item => <Grass item={item} key={item.date}/>)}
+        </div>
       </div>
-    </div>
   );
 };
 

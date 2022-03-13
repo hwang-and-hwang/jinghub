@@ -63,12 +63,75 @@ export const mockShower: JingShower[] = [
         isApproved: false,
         didCleaned: false
     },
-
-
-
-
-
-
-
-
+    {
+        date: '2022-03-15',
+        isApproved: false,
+        didCleaned: false
+    },
+    {
+        date: '2022-03-16',
+        isApproved: false,
+        didCleaned: false
+    },
+    {
+        date: '2022-03-17',
+        isApproved: false,
+        didCleaned: false
+    },{
+        date: '2022-03-18',
+        isApproved: false,
+        didCleaned: false
+    },{
+        date: '2022-03-19',
+        isApproved: false,
+        didCleaned: false
+    },{
+        date: '2022-03-20',
+        isApproved: true,
+        didCleaned: true
+    },{
+        date: '2022-03-21',
+        isApproved: false,
+        didCleaned: false
+    },{
+        date: '2022-03-22',
+        isApproved: false,
+        didCleaned: false
+    },{
+        date: '2022-03-23',
+        isApproved: false,
+        didCleaned: false
+    },
+    {
+        date: '2022-03-24',
+        isApproved: false,
+        didCleaned: false
+    },
+    {
+        date: '2022-03-25',
+        isApproved: false,
+        didCleaned: false
+    },{
+        date: '2022-03-26',
+        isApproved: false,
+        didCleaned: false
+    },
+    {
+        date: '2022-03-27',
+        isApproved: false,
+        didCleaned: false
+    },{
+        date: '2022-03-28',
+        isApproved: false,
+        didCleaned: false
+    },
+    {
+        date: '2022-03-29',
+        isApproved: false,
+        didCleaned: false
+    },{
+        date: '2022-03-30',
+        isApproved: false,
+        didCleaned: false
+    },
 ]
