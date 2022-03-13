@@ -13,10 +13,11 @@ type ProfileProps = {
 const Profile: React.FC<ProfileProps> = ({}) => {
   return (
     <div className={css.root}>
-      <img src={profileImage} className={css.profileImage} />
-      <h3>황정빈</h3>
-      <span>jeongbbn</span>
-      <hr />
+      <div>
+        <img src={profileImage} className={css.profileImage} />
+        <h3>황정빈</h3>
+        <span>jeongbbn</span>
+      </div>
       <ul className={css.list}>
         <li className={css.listItem}>
           <CompanyIcon />

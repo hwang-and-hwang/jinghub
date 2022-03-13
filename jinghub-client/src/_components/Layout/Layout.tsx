@@ -5,15 +5,16 @@ import * as css from './Layout.css';
 
 type LayoutProps = {
   children?: ReactNode,
+  direction?: 'column' | 'row';
 };
 
-const Layout: FC<LayoutProps> = ({ children }) => {
+const Layout: FC<LayoutProps> = ({ children, direction }) => {
   return (
     <div
       className={css.root({})
     }>
       <Header />
-      <Body>{children}</Body>
+      <Body direction={direction}>{children}</Body>
     </div>
   );
 };

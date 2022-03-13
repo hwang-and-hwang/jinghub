@@ -9,7 +9,7 @@ export const root = style({
     padding: '0 2rem',
     color: 'white',
     width: 'calc(100vw - 4rem)',
-    marginBottom: '4rem'
+    marginBottom: '2rem'
 });
 
 export const logoContainer = style({
