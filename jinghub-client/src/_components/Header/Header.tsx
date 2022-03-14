@@ -1,6 +1,6 @@
-import{ useCallback, FC } from 'react';
+import{ FC } from 'react';
 import * as css from './Header.css';
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import logo from '../../assets/logo.png';
 
@@ -11,10 +11,10 @@ type HeaderProps = {
 const Header: FC<HeaderProps> = ({}) => {
   return (
     <div className={css.root}>
-      <div className={css.logoContainer}>
+      <NavLink className={css.logoContainer} to='/'>
         <img src={logo} className={css.logo} />
         <h3>Jinghub</h3>
-      </div>
+      </NavLink>
       <NavLink to='/request'>샤워 인증하기</NavLink>
     </div>
   );
