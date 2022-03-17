@@ -15,7 +15,7 @@ const Header: FC<HeaderProps> = ({}) => {
         <img src={logo} className={css.logo} />
         <h3>Jinghub</h3>
       </NavLink>
-      <NavLink to='/request'>샤워 인증하기</NavLink>
+      <NavLink to='/request' className={css.navLink}>샤워 인증하기</NavLink>
     </div>
   );
 };
