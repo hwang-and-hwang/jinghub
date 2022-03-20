@@ -1,5 +1,6 @@
 import React from 'react';
 import { Layout } from '../_components/Layout';
+import { Form } from '../_components/Form';
 
 type RequestProps = {
   
@@ -7,9 +8,11 @@ type RequestProps = {
 
 const Request: React.FC<RequestProps> = ({}) => {
   return (
-    <Layout>
-      <h3>오늘의 샤워 인증</h3>
-
+    <Layout direction="column">
+      <header>
+        <h3>오늘의 샤워 인증</h3>
+      </header>
+      <Form />
     </Layout>
   );
 };
