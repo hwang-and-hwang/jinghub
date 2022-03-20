@@ -8,7 +8,7 @@ type HeaderProps = {
   
 };
 
-const Header: FC<HeaderProps> = ({}) => {
+export const Header: FC<HeaderProps> = ({}) => {
   return (
     <div className={css.root}>
       <NavLink className={css.logoContainer} to='/'>
@@ -19,5 +19,3 @@ const Header: FC<HeaderProps> = ({}) => {
     </div>
   );
 };
-
-export default Header;

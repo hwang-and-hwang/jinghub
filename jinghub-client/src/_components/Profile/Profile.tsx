@@ -10,7 +10,7 @@ type ProfileProps = {
   
 };
 
-const Profile: React.FC<ProfileProps> = ({}) => {
+export const Profile: React.FC<ProfileProps> = ({}) => {
   return (
     <div className={css.root}>
       <div>
@@ -35,5 +35,3 @@ const Profile: React.FC<ProfileProps> = ({}) => {
     </div>
   );
 };
-
-export default Profile;

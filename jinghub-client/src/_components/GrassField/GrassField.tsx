@@ -2,13 +2,13 @@ import React, { useMemo } from 'react';
 import * as css from './GrassField.css';
 
 import { JingShower } from '../../types';
-import Grass from './Grass/Grass';
+import { Grass } from './Grass';
 
 type GrassFieldProps = {
   field: JingShower[];
 };
 
-const GrassField: React.FC<GrassFieldProps> = ({ field } : GrassFieldProps) => {
+export const GrassField: React.FC<GrassFieldProps> = ({ field } : GrassFieldProps) => {
   const totalShower = useMemo(() => {
     return field.reduce((prev, cur) => {
       return cur.didCleaned ? prev + 1 : prev;
@@ -31,5 +31,3 @@ const GrassField: React.FC<GrassFieldProps> = ({ field } : GrassFieldProps) => {
       </div>
   );
 };
-
-export default GrassField;

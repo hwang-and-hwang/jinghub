@@ -1,9 +1,9 @@
-import Layout from '../_components/Layout/Layout';
-import Profile from '../_components/Profile/Profile';
-import Readme from '../_components/Readme/Readme';
-import GrassField from '../_components/GrassField/GrassField';
+import { Layout } from '../_components/Layout';
+import { Profile } from '../_components/Profile';
+import { Readme } from '../_components/Readme';
+import { GrassField } from '../_components/GrassField';
 import { mockShower } from '../_components/GrassField/GrassField.mock';
-import Detail from '../_components/Detail/Detail';
+import { Detail } from '../_components/Detail';
 import { DetailContext } from '../_components/Detail/Detail.hook';
 
 type MainProps = {

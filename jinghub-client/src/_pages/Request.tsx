@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from '../_components/Layout/Layout';
+import { Layout } from '../_components/Layout';
 
 type RequestProps = {
   
@@ -8,7 +8,8 @@ type RequestProps = {
 const Request: React.FC<RequestProps> = ({}) => {
   return (
     <Layout>
-      request page
+      <h3>오늘의 샤워 인증</h3>
+
     </Layout>
   );
 };

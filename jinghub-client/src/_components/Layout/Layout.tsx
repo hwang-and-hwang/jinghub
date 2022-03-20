@@ -1,6 +1,6 @@
 import { ReactNode, FC } from 'react';
-import Header from '../Header/Header';
-import Body from '../Body/Body';
+import { Header } from '../Header';
+import { Body } from '../Body';
 import { motion } from 'framer-motion';
 import * as css from './Layout.css';
 
@@ -15,7 +15,7 @@ const pageMotion = {
   exit: {x: 200, transition: {duration: 1}}
 };
 
-const Layout: FC<LayoutProps> = ({ children, direction }) => {
+export const Layout: FC<LayoutProps> = ({ children, direction }) => {
   return (
     <motion.div
       className={css.root({})}
@@ -29,5 +29,3 @@ const Layout: FC<LayoutProps> = ({ children, direction }) => {
     </motion.div>
   );
 };
-
-export default Layout;

@@ -5,7 +5,7 @@ import { Context } from './Detail.hook';
 type DetailProps = {
 };
 
-const Detail: React.FC<DetailProps> = ({ }) => {
+export const Detail: React.FC<DetailProps> = ({ }) => {
   const { detailData } = useContext(Context)
   return detailData.showing ? (
     <div className={css.root}>
@@ -16,5 +16,3 @@ const Detail: React.FC<DetailProps> = ({ }) => {
     </div>
   ) : null;
 };
-
-export default Detail;

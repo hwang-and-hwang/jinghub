@@ -6,12 +6,10 @@ type BodyProps = {
   direction?: 'column' | 'row';
 };
 
-const Body: FC<BodyProps> = ({ children, direction }) => {
+export const Body: FC<BodyProps> = ({ children, direction }) => {
   return <div className={css.root({
     'flex-direction': direction || 'row'
   })}>
     {children}
   </div>;
 };
-
-export default Body;

@@ -7,7 +7,7 @@ type GrassProps = {
   item: JingShower
 };
 
-const Grass: FC<GrassProps> = ({ item }) => {
+export const Grass: FC<GrassProps> = ({ item }) => {
   const { setDetailData } = useContext(Context);
 
   const onClickGrass = useCallback(() => {
@@ -27,5 +27,3 @@ const Grass: FC<GrassProps> = ({ item }) => {
     </div>
   );
 };
-
-export default Grass;
