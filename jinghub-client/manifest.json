@@ -1,0 +1,8 @@
+{
+  "short_name": "Jinghub",
+  "name": "Jinghub",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#000"
+}
