@@ -9,7 +9,7 @@ export const root = style({
     padding: '0 2rem',
     color: 'white',
     width: 'calc(100vw - 4rem)',
-    marginBottom: '2rem'
+    marginBottom: '2rem',
 });
 
 export const logoContainer = style({
@@ -17,7 +17,14 @@ export const logoContainer = style({
     alignItems: 'center',
     gap: '1.5rem',
     fontSize: '1.3rem',
-    fontWeight: '400'
+    fontWeight: '400',
+    color: 'white',
+    textDecoration: 'none'
+})
+
+export const navLink = style({
+    color: 'white',
+    textDecoration: 'none'
 })
 
 export const logo = style({
