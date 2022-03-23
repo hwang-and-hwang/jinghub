@@ -1,16 +1,19 @@
 import React, { useCallback, useRef, useState } from 'react';
 import * as css from './Form.css';
+import { ImagePreviewer } from '../ImagePreviewer/ImagePreviewer';
 
 type FormProps = {
   
 };
 
 export const Form: React.FC<FormProps> = ({}) => {
-  const uploadButtonEl = useRef<HTMLInputElement>(null);
+  const fileInputEl = useRef<HTMLInputElement>(null);
 
-  const onClickUploadButton = useCallback(() => {
-    uploadButtonEl.current && uploadButtonEl.current.click();
-  }, []);
+  const onClickUploadButton = useCallback((e: React.MouseEvent) => {
+    e.preventDefault();
+    if(!fileInputEl.current) return;
+    fileInputEl.current.click();
+  }, [fileInputEl.current]);
 
   return (
     <form className={css.root}>
@@ -41,11 +44,9 @@ export const Form: React.FC<FormProps> = ({}) => {
           <label htmlFor="toothbrush" className={css.label}>양치</label>
         </div>
       </div>
-      <input type="file" multiple name="images" ref={uploadButtonEl} className={css.file}/>
+      <input type="file" name="images" ref={fileInputEl} className={css.file} />
+      <ImagePreviewer inputRef={fileInputEl} />
       <button className={css.button} onClick={onClickUploadButton}>인증샷 업로드</button>
-      <div>
-
-      </div>
       <button className={css.button}>
         제출하기
       </button>

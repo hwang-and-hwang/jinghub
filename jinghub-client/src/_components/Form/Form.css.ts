@@ -68,8 +68,6 @@ export const checkmark = style({
 
 export const file = style({
     visibility: 'hidden',
-    width: 0,
-    height: 0
 });
 
 export const button = style({
@@ -81,5 +79,5 @@ export const button = style({
     border: 'solid white',
     borderRadius: '8px',
     alignSelf: 'center',
-    marginTop: '3rem'
+    marginTop: '2rem'
 })
