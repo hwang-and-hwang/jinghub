@@ -1,4 +1,4 @@
-import React, { RefObject, useEffect, useState } from 'react';
+import React, { RefObject, useCallback, useEffect, useMemo, useState } from 'react';
 import * as css from './ImagePreviewer.css';
 
 type ImageCarouselProps = {
@@ -6,16 +6,16 @@ type ImageCarouselProps = {
 };
 
 export const ImagePreviewer: React.FC<ImageCarouselProps> = React.memo(({ inputRef }) => {
-  const fileReader = new FileReader();
+  const fileReader = useMemo(() => new FileReader(), []);
   const [imageUrl, setImageUrl] = useState<any>('');
 
-  const onChangeFileInput = () => {
+  const onChangeFileInput = useCallback(() => {
     if(!inputRef.current || !inputRef.current.files) return;
     fileReader.readAsDataURL(inputRef.current.files[0]);
     fileReader.onload = (e: ProgressEvent<EventTarget>) => {
       setImageUrl((e.target as any).result);
     }
-  }
+  }, [fileReader, inputRef.current]);
 
   useEffect(() => {
     if(!inputRef.current || !inputRef.current.files) return;
