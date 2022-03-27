@@ -44,7 +44,7 @@ export const LoginForm = () => {
         type='password' 
         validate={validatePassword} 
       />
-      <button type='submit' onClick={onClickSubmit}>
+      <button type='submit' onClick={onClickSubmit} className={css.button}>
         로그인
       </button>
     </form>
