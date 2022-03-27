@@ -6,10 +6,9 @@ type FormInputType = {
   name: string;
   placeholder?: string;
   type?: 'password' | 'text';
-  validate?: (value: string) => boolean;
 }
 
-export const FormInput: FC<FormInputType> = ({ label, name, placeholder, type = 'text', validate }) => {
+export const FormInput: FC<FormInputType> = ({ label, name, placeholder, type = 'text' }) => {
   const [input, setInput] = useState<string>('');
   const onChange = ({ target }: ChangeEvent) => {
     setInput((target as HTMLInputElement).value);
@@ -26,7 +25,6 @@ export const FormInput: FC<FormInputType> = ({ label, name, placeholder, type = 
         onChange={onChange}
         value={input}
       />
-      <span>{validate?.(input) && '잘못된 입력입니다.'}</span>
     </div>
   )
 };

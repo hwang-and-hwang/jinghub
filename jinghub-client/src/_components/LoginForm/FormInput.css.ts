@@ -7,6 +7,7 @@ export const root = style({
   height: 'auto',
   alignItems: 'center',
   fontSize: '1.2rem',
+  marginBottom: '2rem',
 });
 
 export const input = style({
