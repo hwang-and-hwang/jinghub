@@ -1,4 +1,6 @@
-import React from 'react';
+import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useCookies } from './cookie.hooks';
 import { Layout } from '../_components/Layout';
 import { Form } from '../_components/Form';
 
@@ -7,6 +9,12 @@ type RequestProps = {
 };
 
 const Request: React.FC<RequestProps> = ({}) => {
+  const { getCookie } = useCookies();
+  const navigate = useNavigate();
+  useEffect(() => {
+    if(!getCookie('session')) navigate('/login');
+  }, [navigate])
+
   return (
     <Layout direction="column">
       <header>
