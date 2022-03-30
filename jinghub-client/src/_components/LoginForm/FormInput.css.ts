@@ -3,7 +3,7 @@ import { style } from '@vanilla-extract/css';
 export const root = style({
   display: 'grid',
   gridTemplateColumns: '1fr 2fr',
-  gap: '2rem',
+  gap: '1rem',
   height: 'auto',
   alignItems: 'center',
   fontSize: '1.2rem',
@@ -13,8 +13,14 @@ export const root = style({
 export const input = style({
   padding: '.5rem 1rem',
   outline: 'none',
-  border: '1px solid',
+  border: '1px solid white',
   borderRadius: '.5rem',
   background: 'transparent',
-  fontSize: '1.2rem',
+  fontSize: '1rem',
+    color: 'white',
+    selectors: {
+      '&:focus': {
+          backgroundColor: 'transparent',
+      }
+        }
 });

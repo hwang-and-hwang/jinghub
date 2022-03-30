@@ -22,12 +22,12 @@ export const LoginForm = () => {
       <FormInput 
         label='Username' 
         name='username' 
-        placeholder='username을 입력해주세요.' 
+        placeholder='username'
       />
       <FormInput 
         label='Password' 
         name='password'
-        placeholder='비밀번호를 입력해주세요.' 
+        placeholder='password'
         type='password' 
       />
       <button type='submit' onClick={onClickSubmit} className={css.button}>
