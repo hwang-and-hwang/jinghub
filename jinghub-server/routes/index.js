@@ -5,5 +5,8 @@ const router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
+router.post('/auth', (req, res, next) => {
+
+})
 
 module.exports = router;
